@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <title>Portfolio</title>
   </head>
   <body>
@@ -19,17 +20,19 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6  header">
-                <h1>Hello I am Dusan!<br>Front-End developer</h1>
+                <h1>Hello I am Dusan!</h1>
                 <p>I am at my final year of the Web design and development studies, and I am looking for chance to learn and improve development skills. Looking for an internship.</p>
             </div>
             <div class="col-lg-6 header-button">
-                <button>contact me</button>
+                <a href="#contact"><button>contact me</button></a>
+                <button id="cv-button">download cv</button>
             </div>
         </div>
     </div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 hero-img">
+                <img class="logo" src="images/logo.svg">
             </div>
         </div>
     </div>
@@ -80,7 +83,6 @@
                 <div class="col-lg-12 section-title">
                     <h1>02</h1>
                     <h2 id="portfolio-h2">Portfolio</h2>
-                    <p id="portfolio-p">check our work</p>
                 </div>
                     <div class="col-lg-6">
                         <h1>What I want to learn more</h1>
@@ -91,13 +93,56 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid container-bg">
+    <div class="container-fluid testimonials container-bg">
         <div class="container">
-            <div class="col-lg-12 slider">
-                <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h2>
-                <img src="images/60.jpg" class="avatar-img">
-                <h1>Peter Hall</h1>
-                <h2>CEO</h2>
+            <div class="row">
+                <div class="col-lg-12 section-title">
+                    <h1>03</h1>
+                    <h2>Testimonials</h2>
+                </div>
+                <div class="col-lg-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                            <img src="images/60.jpg">
+                            <h2>Petter Hall<br>CEO</h2>
+                          </div>
+                          <div class="carousel-item">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                            <img src="images/61.jpg">
+                            <h2>Petter Hall<br>CEO</h2>
+                          </div>
+                          <div class="carousel-item">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                            <img src="images/62.jpg">
+                            <h2>Petter Hall<br>CEO</h2>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                </div>
             </div>
         </div>
     </div>
@@ -119,7 +164,7 @@
                     <h2>Project Name</h2>
                     <p>Link</p>
                 </div>
-                <div class="col-lg-4" style="background-color: #e74c3c; width: 100%; height: 400px;">
+                <div class="col-lg-4" style="background-color: blue; width: 100%; height: 400px;">
                     <p>HTML, CSS</p>
                     <h2>Project Name</h2>
                     <p>Link</p>
@@ -127,7 +172,23 @@
             </div>
         </div>
     </div>
-   
+    <div class="container-fluid contact container-bg" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 contact-text">
+                    <img src="images/logo2.svg">
+                    <h1>stankovic_dusan@outlook.com</h1>
+                    <h2>+381605764048</h2>
+                </div>
+                <div class="col-lg-12 contact-icon">
+                    <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-skype"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
