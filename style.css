@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
 .row > [class*="col-"] {
@@ -25,7 +25,7 @@ body
 .header h1
 {
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 42px;
     color: #333333;
     font-style: normal;
@@ -37,28 +37,19 @@ body
     text-align: left;
     padding-top: 30px;
 }
-.hero-img
+.btn-primary
 {
-    width: 100%;
-    height:100vh;
-    background-image: url("images/mac-code.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    border-radius: 0;
 }
-.hero-img img
+#contact-button:hover
 {
-    width: 20%;
+    background-color: #dd6042;
 }
-.header-button *
+.header-buttons *
 {
     z-index: 1;
 }
-.header-button
+.header-buttons
 {   
    display: flex;
    justify-content: flex-end;
@@ -66,7 +57,7 @@ body
    align-content: center;
    margin-bottom: -28px;
 }
-.header-button button{
+.header-buttons button{
     background-color: #dd6042; 
     border: none;
     color: white;
@@ -96,6 +87,24 @@ button a
     padding: 18px 32px;
     outline:none;
 }
+.hero-img
+{
+    width: 100%;
+    height:100vh;
+    background-image: url("images/mac-code.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.hero-img img
+{
+    width: 20%;
+}
+
 .container-bg
 {
     width: 100%;
@@ -106,7 +115,6 @@ button a
     padding-top: 60px;
     font-weight: bold;
 }
-
 .section-title h1
 {
     color: #D75840;
@@ -121,7 +129,6 @@ button a
     text-transform: uppercase;
     background-color: #041d21;
     font-weight: bold;
-    width: 15%;
     z-index: 1;
     margin-top: -36px;
     color: white;
@@ -153,26 +160,74 @@ button a
     color: white;
     padding: 20px 40px 0px 0px;
 }
-.portfolio
+
+#projects-h2
 {
-    height: 450px
-}
-#portfolio-h2
-{
+    color: #041D21;
     background-color: white;
-    width: 50%;
-    color: #041d21;
-    text-align: left;
 }
-.projects
+.projects-tabs
 {
-    height: auto;
+    margin-top: 20px;
+    margin-bottom: 80px;
 }
+.projects-tab
+{
+    margin-top: 30px;
+}
+.projects-tab p
+{
+    color: #041D21;
+    font-size: 16px;
+    font-weight: 400;
+}
+.projects-tab h2
+{
+    color: #041D21;
+    font-size: 32px;
+    font-weight: 400;
+}
+.projects-tab img
+{
+    width: 100%;
+    padding: 10px;
+}
+.projects-tab-buttons
+{   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    align-content: center;
+    margin-bottom: 20px;
+}
+.projects-button
+{
+    margin: 10px 0px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #dd6042; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    outline:none;
+    
+}
+.projects-button:hover
+{
+    background-color: #041d21; 
+    color: white; 
+}
+
 .testimonials
 {
     height: auto;
 }
-
 .carousel-inner
 {
     height: 500px;
@@ -187,19 +242,35 @@ button a
     padding: 40px 200px 50px 200px;
     line-height: 200%;
 }
-.carousel-item img
-{
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-}
 .carousel-item h2
 {
     color: white;
     font-size: 24px;
     padding-top: 10px;
 }
-.contact
+.carousel-item h3
+{
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.what-section
+{
+    height: 450px
+}
+#what-h2
+{
+    background-color: white;
+    color: #041d21;
+    text-align: left;
+}
+#what-p
+{
+    margin-top: 40px;
+}
+
+.contact-section
 {
     width: 100%;
     height: 500px;
@@ -228,13 +299,28 @@ button a
     color: white;
     font-family: 'Inter', sans-serif;
 }
+.contact-title
+{
+    color: white;
+    font-size: 28px;
+    font-weight: 300;
+    margin-top: 40px;
+}
+.contact-detail
+{
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 32px;
+}
 .contact-icon
 {
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 50px;
+    margin-bottom: 50px;
 }
 .contact-icon li
 {
@@ -245,29 +331,28 @@ button a
 {
     color: #fff;
     text-decoration: none;
-    font-size: 30px;
-    padding-right: 20px;
+    font-size: 36px;
+    padding: 0 16px;
 }
-.fa-skype:hover
-{
-   color:#4dabf7;
-}
-.fa-facebook:hover
-{
-  color: #3d5b99;
-}
-.fa-twitter:hover
-{
-    color: #00aced;
-}
-.fa-linkedin:hover
-{
-    color: #0077b5;
-}
-.fa-github:hover
+#github-icon:hover
 {
     color:#5a32a3;
 }
+#linkedin-icon:hover
+{
+    color: #0077b5;
+}
+#skype-icon:hover
+{
+   color:#4dabf7;
+}
+#twitter-icon:hover
+{
+    color: #00aced;
+}
+
+
+
 @media only screen and (max-width: 600px) 
 {
     .carousel-item p
