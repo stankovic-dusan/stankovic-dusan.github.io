@@ -320,7 +320,7 @@ button a
     align-items: center;
     justify-content: center;
     padding-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .contact-icon li
 {
@@ -355,8 +355,42 @@ button a
 
 @media only screen and (max-width: 600px) 
 {
+  
     .carousel-item p
     {
         padding: 0 0 50px 0;
+    }
+    .header
+    {
+        justify-content: center;
+        align-items: center;
+    }
+    .header-buttons
+    {   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .header p
+    {
+        text-align: center;
+    }
+    .hero-img img
+    {
+        width: 50%;
+    }
+    .tabs
+    {
+       padding-top: 80px;
+       padding-bottom: 0px;
+    }
+    .last-tab
+    {
+        margin-bottom: 80px;
+    }
+    .contact-detail
+    {
+        font-size: 24px;
     }
 }
