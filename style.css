@@ -1,396 +1,340 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
 .row > [class*="col-"] {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
-html
-{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body
-{
-    font-family: 'Inter', sans-serif;
+body {
+  font-family: "Inter", sans-serif;
 }
-.header
-{
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 40px;
+.header {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
 }
-.header h1
-{
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 42px;
-    color: #333333;
-    font-style: normal;
+.header h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  color: #333333;
+  font-style: normal;
 }
-.header p
-{
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    text-align: left;
-    padding-top: 30px;
+.header p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  padding-top: 30px;
 }
-.btn-primary
-{
-    border-radius: 0;
+.btn-primary {
+  border-radius: 0;
 }
-#contact-button:hover
-{
-    background-color: #dd6042;
+#contact-button:hover {
+  background-color: #dd6042;
 }
-.header-buttons *
-{
-    z-index: 1;
+.header-buttons * {
+  z-index: 1;
 }
-.header-buttons
-{   
-   display: flex;
-   justify-content: flex-end;
-   align-items: flex-end;
-   align-content: center;
-   margin-bottom: -28px;
+.header-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: center;
+  margin-bottom: -28px;
 }
-.header-buttons button{
-    background-color: #dd6042; 
-    border: none;
-    color: white;
-    padding: 20px 38px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
-    margin-left: 10px;
-    outline:none;
+.header-buttons button {
+  background-color: #dd6042;
+  border: none;
+  color: white;
+  padding: 20px 38px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  margin-left: 10px;
+  outline: none;
+}
+button a {
+  color: white;
+  text-decoration: none;
+  overflow: hidden;
+}
+#cv-button {
+  background-color: #ffffff;
+  border: 3px solid #dd6042;
+  color: #dd6042;
+  padding: 18px 32px;
+  outline: none;
+}
+.hero-img {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/mac-code.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.hero-img img {
+  width: 20%;
+}
+
+.container-bg {
+  width: 100%;
+  background-color: #041d21;
+}
+.section-title {
+  padding-top: 60px;
+  font-weight: bold;
+}
+.section-title h1 {
+  color: #d75840;
+  font-family: "Inter", sans-serif;
+  font-size: 68px;
+  text-transform: uppercase;
+  z-index: -1;
+}
+.section-title h2 {
+  position: absolute;
+  text-transform: uppercase;
+  background-color: #041d21;
+  font-weight: bold;
+  z-index: 1;
+  margin-top: -36px;
+  color: white;
+}
+.section-title p {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.tabs {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+.tabs spam {
+  color: #d75840;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.tabs h2 {
+  padding-top: 30px;
+  color: white;
+}
+.tabs p {
+  color: white;
+  padding: 20px 40px 0px 0px;
+}
+
+#projects-h2 {
+  color: #041d21;
+  background-color: white;
+}
+.projects-tabs {
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+.projects-tab {
+  margin-top: 30px;
+}
+.projects-tab p {
+  color: #041d21;
+  font-size: 16px;
+  font-weight: 400;
+}
+.projects-tab h2 {
+  color: #041d21;
+  font-size: 32px;
+  font-weight: 400;
+}
+.projects-tab img {
+  width: 100%;
+  padding: 10px;
+}
+.projects-tab-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  align-content: center;
+  margin-bottom: 20px;
+}
+
+.projects-button {
+  margin: 10px 0px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #dd6042;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  outline: none;
+}
+.projects-button:hover {
+  background-color: #041d21;
+  color: white;
+}
+
+.projects-button:focus {
+  outline: 0;
+}
+
+.projects-button a {
+  outline: 0;
+  border: none;
+}
+
+.testimonials {
+  height: auto;
+}
+.carousel-inner {
+  height: 500px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.carousel-item p {
+  color: white;
+  padding: 40px 200px 50px 200px;
+  line-height: 200%;
+}
+.carousel-item h2 {
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+}
+.carousel-item h3 {
+  color: white;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.what-section {
+  height: 450px;
+}
+#what-h2 {
+  background-color: white;
+  color: #041d21;
+  text-align: left;
+}
+#what-p {
+  margin-top: 40px;
+}
+
+.contact-section {
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+.contact img {
+  width: 50px;
+  margin-top: -30px;
+}
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.contact-text h1 {
+  padding-top: 100px;
+  color: white;
+}
+.contact-text h2 {
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+.contact-title {
+  color: white;
+  font-size: 28px;
+  font-weight: 300;
+  margin-top: 40px;
+}
+.contact-detail {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 32px;
+}
+.contact-icon {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+.contact-icon li {
+  vertical-align: top;
+  display: inline;
+}
+.contact-icon a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 36px;
+  padding: 0 16px;
+}
+#github-icon:hover {
+  color: #5a32a3;
+}
+#linkedin-icon:hover {
+  color: #0077b5;
+}
+#skype-icon:hover {
+  color: #4dabf7;
+}
+#twitter-icon:hover {
+  color: #00aced;
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-item p {
+    padding: 0 0 50px 0;
   }
-button a
-{
-    color: white;
-    text-decoration: none;
-    overflow: hidden;
-}
-#cv-button
-{
-    background-color: #ffffff;
-    border: 3px solid #dd6042;
-    color:  #dd6042;
-    padding: 18px 32px;
-    outline:none;
-}
-.hero-img
-{
-    width: 100%;
-    height:100vh;
-    background-image: url("images/mac-code.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  .header {
+    justify-content: center;
+    align-items: center;
+  }
+  .header-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-}
-.hero-img img
-{
-    width: 20%;
-}
-
-.container-bg
-{
-    width: 100%;
-    background-color: #041d21 ;
-}
-.section-title
-{
-    padding-top: 60px;
-    font-weight: bold;
-}
-.section-title h1
-{
-    color: #D75840;
-    font-family: 'Inter', sans-serif;
-    font-size: 68px;
-    text-transform: uppercase;
-    z-index: -1;
-}
-.section-title h2
-{
-    position: absolute;
-    text-transform: uppercase;
-    background-color: #041d21;
-    font-weight: bold;
-    z-index: 1;
-    margin-top: -36px;
-    color: white;
-}
-.section-title p
-{
-    color: white;  
-    text-transform: uppercase;
-    font-weight: bold;
-}
-.tabs
-{
-   padding-top: 40px;
-   padding-bottom: 80px;
-}
-.tabs spam
-{
-    color: #D75840;
-    text-transform: uppercase;
-    font-size: 18px;
-}
-.tabs h2
-{
-    padding-top: 30px;
-    color: white;
-}
-.tabs p
-{
-    color: white;
-    padding: 20px 40px 0px 0px;
-}
-
-#projects-h2
-{
-    color: #041D21;
-    background-color: white;
-}
-.projects-tabs
-{
-    margin-top: 20px;
+  }
+  .header p {
+    text-align: center;
+  }
+  .hero-img img {
+    width: 50%;
+  }
+  .tabs {
+    padding-top: 80px;
+    padding-bottom: 0px;
+  }
+  .last-tab {
     margin-bottom: 80px;
-}
-.projects-tab
-{
-    margin-top: 30px;
-}
-.projects-tab p
-{
-    color: #041D21;
-    font-size: 16px;
-    font-weight: 400;
-}
-.projects-tab h2
-{
-    color: #041D21;
-    font-size: 32px;
-    font-weight: 400;
-}
-.projects-tab img
-{
-    width: 100%;
-    padding: 10px;
-}
-.projects-tab-buttons
-{   
-    display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
-    align-content: center;
-    margin-bottom: 20px;
-}
-.projects-button
-{
-    margin: 10px 0px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #dd6042; 
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    outline:none;
-    
-}
-.projects-button:hover
-{
-    background-color: #041d21; 
-    color: white; 
-}
-
-.testimonials
-{
-    height: auto;
-}
-.carousel-inner
-{
-    height: 500px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    margin-bottom: 100px;
-}
-.carousel-item p
-{
-    color: white;
-    padding: 40px 200px 50px 200px;
-    line-height: 200%;
-}
-.carousel-item h2
-{
-    color: white;
+  }
+  .contact-detail {
     font-size: 24px;
-    padding-top: 10px;
-}
-.carousel-item h3
-{
-    color: white;
-    font-size: 18px;
-    padding-top: 10px;
-}
-
-.what-section
-{
-    height: 450px
-}
-#what-h2
-{
-    background-color: white;
-    color: #041d21;
-    text-align: left;
-}
-#what-p
-{
-    margin-top: 40px;
-}
-
-.contact-section
-{
-    width: 100%;
-    height: 500px;
-    display: flex;
-}
-.contact img
-{
-    width: 50px;
-    margin-top: -30px;
-}
-.contact-text
-{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-}
-.contact-text h1 
-{   
-    padding-top: 100px;
-    color: white;
-}
-.contact-text h2
-{
-    color: white;
-    font-family: 'Inter', sans-serif;
-}
-.contact-title
-{
-    color: white;
-    font-size: 28px;
-    font-weight: 300;
-    margin-top: 40px;
-}
-.contact-detail
-{
-    color: white;
-    font-size: 32px;
-    font-weight: 700;
-    margin-top: 32px;
-}
-.contact-icon
-{
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-    margin-bottom: 30px;
-}
-.contact-icon li
-{
-    vertical-align: top;
-    display: inline;
-}
-.contact-icon a
-{
-    color: #fff;
-    text-decoration: none;
-    font-size: 36px;
-    padding: 0 16px;
-}
-#github-icon:hover
-{
-    color:#5a32a3;
-}
-#linkedin-icon:hover
-{
-    color: #0077b5;
-}
-#skype-icon:hover
-{
-   color:#4dabf7;
-}
-#twitter-icon:hover
-{
-    color: #00aced;
-}
-
-
-
-@media only screen and (max-width: 600px) 
-{
-  
-    .carousel-item p
-    {
-        padding: 0 0 50px 0;
-    }
-    .header
-    {
-        justify-content: center;
-        align-items: center;
-    }
-    .header-buttons
-    {   
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
-    .header p
-    {
-        text-align: center;
-    }
-    .hero-img img
-    {
-        width: 50%;
-    }
-    .tabs
-    {
-       padding-top: 80px;
-       padding-bottom: 0px;
-    }
-    .last-tab
-    {
-        margin-bottom: 80px;
-    }
-    .contact-detail
-    {
-        font-size: 24px;
-    }
+  }
 }
